@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>kurs mata uang</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <section>
+      <h2>ini kurs mata uang</h2>
+      <div class="content">
+        <input type="number" name="" id="nilai" placeholder="Masukan Nilai" onchange="kursMataUang()" />
+        <select name="" id="kurs" onchange="kursMataUang()">
+          <option value="usd">US Dollar - 14.189</option>
+          <option value="sgd">SG Dollar - 10.440</option>
+          <option value="rm">Ringgit Malaysia - 3382</option>
+          <option value="yen">Yen Jepang - 124</option>
+          <option value="euro">Euro - 16.065</option>
+          <option value="riyal">riyal saudi - 3779</option>
+        </select>
+        <input type="text" onchange="kursMataUang()" name="" id="hasil"  />
+      </div>
+      <p>kurs diatas berdasarkan data per 25 desember 2021</p>
+    </section>
+    <script src="script.js"></script>
+  </body>
+</html>
