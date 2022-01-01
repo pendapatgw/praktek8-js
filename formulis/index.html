@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <section id="form-validate">
+      <div class="input-data">
+        <!-- mulai disini -->
+        <h2>Formulir penerbangan</h2>
+        <form>
+          <div class="arah">
+            <div class="kiri">
+              <div class="satu">
+                <input type="text" id="nama" value="" placeholder="masukan nama" />
+                <span id="erorkosong" class="kosong" style="display: none">jangan kosong</span>
+                <span id="karakter" class="kosong" style="display: none">maks.15 karakterk</span>
+              </div>
+              <div class="dua">
+                <input type="email" id="email" value="" placeholder="masukan email" />
+                <span id="emakosong" class="kosong">format harus sesuai</span>
+                <span id="akeong" class="kosong">email salah</span>
+              </div>
+            </div>
+            <div class="kanan">
+              <div class="tiga">
+                <input type="text" id="tujuan" value="" placeholder="masukan tujuan" />
+                <span id="tujuannol" class="kosong">tujuan tidak boleh kosong</span>
+              </div>
+              <div class="empat">
+                <input type="time" id="jadwal" value="" placeholder="masukan jadwal" />
+                <span id="jadwalkosong" class="kosong">jadwal tidak boleh kosong</span>
+              </div>
+            </div>
+          </div>
+          <div class="tengah">
+            <input type="number" min="0" max="12" id="tiket" value="" placeholder="masukan tiket" />
+            <span id="tiket" class="kosong">tiket harus bernilai</span>
+            <span id="maxtiket" class="kosong">maks.12 tiket</span>
+            <button type="button" class="submit" id="kirim">pesan</button>
+          </div>
+        </form>
+        <!-- akhirnya disini -->
+      </div>
+      <!-- hasil -->
+      <div class="isi">
+        <p class="hasil-nama">nama penumpang: <span id="hasilnama"></span></p>
+        <p class="hasil-email">email:<span id="hasilemail"></span></p>
+        <p class="hasil-tujuan">tujuan perjalanan:<span id="hasiltujuan"></span></p>
+        <p class="hasil-jadwal">jadwal perjalanan:<span id="hasiljadwal"></span></p>
+        <p class="hasil-tiket">jumlah tiket:<span id="hasiltiket"></span></p>
+      </div>
+      <!-- selesai disini -->
+    </section>
+    <script src="script.js"></script>
+  </body>
+</html>
