@@ -1,0 +1,29 @@
+section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+h2,
+.isipesan,
+input,
+button {
+  text-align: center;
+}
+.chatbox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.isipesan {
+  height: 20rem;
+  width: 20%;
+  background-color: rgb(84, 175, 148);
+}
+button {
+  width: 3rem;
+  height: 2rem;
+  border: none;
+}
+input {
+  border: none;
+}
