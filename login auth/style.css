@@ -1,0 +1,77 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  text-transform: capitalize;
+}
+:root {
+  --warna1: rgb(35, 98, 182);
+  --warna2: rgb(164, 164, 167);
+  --warna3: rgb(39, 180, 21);
+  --warna4: rgb(255, 0, 0);
+  --warna5: black;
+}
+body {
+  display: flex;
+  /* align-items: center; */
+  justify-content: center;
+  background-color: var(--warna1);
+}
+.fulllogin {
+  margin: 3rem 0;
+}
+.loginbox {
+  background-color: var(--warna2);
+  width: 25em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 30rem;
+  border-radius: 10px;
+}
+
+h3 {
+  margin: 3rem 0;
+  text-transform: uppercase;
+}
+.kumpulin button {
+  width: 5rem;
+  height: 2rem;
+}
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.atas,
+.tengah {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 1rem;
+}
+
+.atas input,
+.tengah input {
+  height: 2rem;
+  border-radius: 10px;
+  border: none;
+  text-align: center;
+}
+.ataslogin {
+  margin: 5px 0;
+}
+.tengahlogin {
+  margin: 5px 0;
+}
+.bawahlogin {
+  margin: 10px 0;
+}
+.salah {
+  margin-bottom: 10px;
+}
+.salah .link {
+  cursor: pointer;
+  color: var(--warna1);
+  font-weight: bold;
+}
